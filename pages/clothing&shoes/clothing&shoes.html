@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="stylesheet" href="../../packages/bootstrap-5.3.0-dist/css/bootstrap.css">
+  <link rel="stylesheet"
+    href="../../packages/ספריית אייקונים - font awesome/fontawesome-free-5.12.0-web/fontawesome-free-5.12.0-web/css/all.css">
+  <link rel="stylesheet" href="../../styles/general.css">
+
+  <title>בואי כלה</title>
+</head>
+
+<body>
+  <ul id="nav">
+    <img id="logo" height=50px src="../../assets/backgrounds/לוגו.png">
+    <div id="menu"><i class="fas fa-list-ul"></i></div>
+    <div id="ca">
+      <a href="../home/home.html">דף הבית</a>
+      <a href="../textil/textil.html">נדוניה</a>
+      <a href="../homeDishes/homeDishes.html">כלי בית</a>
+      <a class="current-page" href="../clothing&shoes/clothing&shoes.html">הלבשה והנעלה</a>
+      <a href="../wigs/wigs.html">פיאות</a>
+      <a href="../makeUp/makeUp.html">איפור</a>
+      <a href="../myShoppingList/myShoppingList.html">רשימת הקניות האישית שלי</a>
+    </div>
+    <div id="user"><i class="uil uil-user"></i> <span id="user-name"></span></div>
+
+  </ul>
+  <div id="shop" style="visibility:hidden;" class="alert alert-warning alert-dismissible fade show" role="alert">
+    <form action="../home/orderSubmit.html">
+
+      <div class="form-floating">
+        <input type="text" class="form-control" id="adress" placeholder="Password" required>
+        <label for="floatingPassword">כתובת מדויקת למשלוח</label>
+      </div>
+      <span>פרטי כרטיס אשראי</span>
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="name-card" placeholder="name@example.com" required>
+        <label for="floatingInput">שם בעל הכרטיס</label>
+      </div>
+      <div class="form-floating">
+        <input type="text" class="form-control" id="card-number" placeholder="Password" required>
+        <label for="floatingPassword">מספר כרטיס</label>
+      </div>
+      <div class="form-floating">
+        <input type="text" class="form-control" id="date" placeholder="Password" required>
+        <label for="floatingPassword">mm/yy</label>
+      </div>
+      <div class="form-floating">
+        <input type="text" class="form-control" id="cvv" placeholder="Password" required>
+        <label for="floatingPassword">cvv</label>
+      </div>
+      <button id="order" type="submit">אישור הזמנה</button>
+    </form>
+    <button id="close-button" type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  <form name="search" id="search">
+    <div class="input-group flex-nowrap">
+      <span class="input-group-text" id="addon-wrapping">₪</span>
+      <input id="maxPrice" type="number" class="form-control" placeholder="מחיר מקסימלי" aria-label="Username"
+        aria-describedby="addon-wrapping">
+    </div>
+    <select name="city" id="city-choose" class="form-select" aria-label="Default select example">
+      <option value="0">בחרי עיר</option>
+      <option value="1">ירושלים</option>
+      <option value="2">בני ברק</option>
+      <option value="3">מודיעין עילית </option>
+      <option value="4">ביתר</option>
+      <option value="5">בית שמש</option>
+      <option value="6">רכסים</option>
+      <option value="7"> אשדוד</option>
+      <option value="8">אלעד</option>
+    </select>
+    <div class="btn-group" role="group" aria-label="Basic outlined example">
+      <button type="button" id="btnOff" class="btn btn-light">אפס הכל</button>
+      <button type="button" id="btnSearch" class="btn btn-light">סנן</button>
+    </div>
+
+
+    <div class="input-group flex-nowrap">
+      <span class="input-group-text" id="addon-wrapping"><i class="fas fa-search" id="free"></i></span>
+      <input id="free-search" type="text" class="form-control" placeholder="לחיפוש חופשי " aria-label="Username"
+        aria-describedby="addon-wrapping">
+    </div>
+
+  </form>
+  <div class="cont">
+    <form class="list" name="thisform">
+      <div id="inputs">
+        <input id="a" type="checkbox"><label for="a">פיג'מות</label>
+        <input id="b" type="checkbox"><label for="b">גרביים ללילה</label>
+        <input id="c" type="checkbox"><label for="c">גרביים חומות</label>
+        <input id="d" type="checkbox"><label for="d">גרביים שחורות</label>
+        <input id="e" type="checkbox"> <label for="e">בגדים ליום חול</label>
+        <input id="f" type="checkbox"><label for="f">בגדים לשבת</label>
+        <input id="g" type="checkbox"><label for="g">חלוקי מגבת</label>
+        <input id="h" type="checkbox"><label for="h">נעלי שבת</label>
+        <input id="i" type="checkbox"><label for="i">נעלים ליום חול</label>
+        <input id="j" type="checkbox"><label for="j">חלוקים</label>
+        <input id="k" type="checkbox"><label for="k">נעלי בית</label>
+        <input id="l" type="checkbox"><label for="l">מטפחות/בנדנות</label>
+        <input id="m" type="checkbox"><label for="m">חולצות בסיס</label>
+        <input id="n" type="checkbox"><label for="n">גופיות קיץ</label>
+        <input id="o" type="checkbox"><label for="o">גופיות חורף</label>
+      </div>
+    </form>
+    <div class="stores" id="storesDiv"></div>
+  </div>
+  <div id="current-store" class="details" aria-live="assertive" aria-atomic="true" style="visibility: hidden;">
+    <i id="shop-car" class="fas fa-shopping-basket"></i>
+    <i id="map" class="fas fa-map-marker-alt"></i>
+    <i id="phone" class="fas fa-phone"></i>
+    <i id="clock" class="fas fa-clock"></i>
+  </div>
+  <div id="mapa">
+
+    <!-- <h2>מפת אתר</h2> -->
+    <div id="categories">
+      <h3>קטגוריות</h3>
+      <ul>
+        <li><a class="bottom" href="../textil/textil.html">נדוניה</a></li>
+        <li><a class="bottom" href="../homeDishes/homeDishes.html">כלי בית</a></li>
+        <li><a class="bottom" href="../clothing&shoes/clothing&shoes.html">הלבשה והנעלה</a></li>
+        <li><a class="bottom" href="../wigs/wigs.html">פיאות</a></li>
+        <li><a class="bottom" href="../makeUp/makeUp.html">איפור</a></li>
+      </ul>
+    </div>
+    <div id="links">
+      <h3>קישורים מומלצים</h3>
+      <ul>
+        <li><a class="bottom" href="../home/home.html">בית </a></li>
+        <li><a class="bottom" href="../myShoppingList/myShoppingList.html">רשימת הקניות האישית שלי</a></li>
+        <li><a id="cardLink" class="bottom" href="">לרכישת כרטיס הנחה</a></li>
+      </ul>
+    </div>
+    <div id="about">
+
+      <h3>אודותינו</h3>
+      <p>אנחנו כאן כדי לעזור לך להתכונן ליום הגדול שלך בקלות ובנוחות .<br>אצלנו תוכלי למצוא מידע על מאגר עצום של
+        חנויות,<br> תוכלי לראות מה הקצב שלך ולראות בעינים את ההתקדמות שלך ליעד.<br> מוזמנת לגלות שאפשר גם אחרת!</p>
+    </div>
+    <div id="contact">
+
+      <h3>צרי קשר</h3>
+      <i class="fas fa-phone-alt"></i><span> 0504164572 / 0556736200</span><br><br>
+      <i class="fas fa-envelope"></i><span> m0504164572@gmail.com</span>
+    </div>
+  </div>
+
+</body>
+<script src="../../packages/jquery-3.6.4.min.js"></script>
+<script src="../../services/service.js"></script>
+<script src="../../services/general.js"></script>
+<script src="./clothing&shoes.js"></script>
+
+</html>

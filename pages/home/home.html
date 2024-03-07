@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="stylesheet" href="../../packages/bootstrap-5.3.0-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="../../packages/ספריית אייקונים - font awesome/fontawesome-free-5.12.0-web/fontawesome-free-5.12.0-web/css/all.css">
+  <link rel="stylesheet" href="../../styles/general.css">
+  <link rel="stylesheet" href="./home.css">
+  <title>בואי כלה</title>
+</head>
+
+<body>
+
+ 
+   
+    <ul id="nav">
+      <img id="logo" height=50px src="../../assets/backgrounds/לוגו.png">
+      <div id="menu"><i  class="fas fa-list-ul"></i></div>
+    <div id = "ca">
+        <a class="current-page" href="../home/home.html">דף הבית</a>
+        <a href="../textil/textil.html">נדוניה</a>
+        <a href="../homeDishes/homeDishes.html">כלי בית</a>
+        <a href="../clothing&shoes/clothing&shoes.html">הלבשה והנעלה</a>
+        <a   href="../wigs/wigs.html">פיאות</a>
+        <a href="../makeUp/makeUp.html">איפור</a>
+        <a href="../myShoppingList/myShoppingList.html">רשימת הקניות האישית שלי</a>
+      </div>
+        <div id="user"><i class="uil uil-user"></i> <span id="user-name"></span></div>
+     
+      </ul>
+      <div id="alrt" style="visibility:hidden;" class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>מזל טוב!</strong> <br> <span id="name"></span> , בעוד <span id="days"></span> ימים החתונה שלך!!!<br>
+         לידיעתך, באפשרותך לרכוש כרטיס חברה המקנה לך 5% הנחה<br> בכל החנויות המופיעות באתר בעלות סמלית של 20 ש"ח.
+     <br>    <button id="buy">לרכישה</button>  
+        <button id="close" type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      <div id="shop" style="visibility:hidden;" class="alert alert-warning alert-dismissible fade show" role="alert">
+        <form action="../home/orderSubmit.html">
+         
+          <div class="form-floating">
+            <input type="text" class="form-control" id="adress" placeholder="Password" required>
+            <label for="floatingPassword">כתובת מדויקת למשלוח</label>
+          </div>
+          <span>פרטי כרטיס אשראי</span>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="name-card" placeholder="name@example.com" required>
+            <label for="floatingInput">שם בעל הכרטיס</label>
+          </div>
+          <div class="form-floating">
+            <input type="text" class="form-control" id="card-number" placeholder="Password" required>
+            <label for="floatingPassword">מספר כרטיס</label>
+          </div>
+          <div class="form-floating">
+            <input type="text" class="form-control" id="date" placeholder="Password" required>
+            <label for="floatingPassword">mm/yy</label>
+          </div>
+          <div class="form-floating">
+            <input type="text" class="form-control" id="cvv" placeholder="Password" required>
+            <label for="floatingPassword">cvv</label>
+          </div>
+          <button id="order" type="submit">אישור הזמנה</button>
+        </form>
+        <button id="close-button" type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      <div id="container">
+      
+    <div id="first">
+    
+      <div id="image"> 
+       
+    </div>
+      <div id="about" class="text">
+        <h1>כלה?</h1>
+        <h2>מעונינת להתכונן בכיף וברוגע?</h2>
+        <p>
+          תקופת ההכנות לחתונה מתאפינת אצל רבות בבלבול ולחץ שמתווספים להתרגשות ולשמחה, לפעמים נעשות טעויות כמו דברים
+          שנקנים פעמיים או נשכחים. רוצה למנוע את זה?
+          מוזמנת להתחבר אלינו. באתר תמצאי רשימת קניות מסודרת ומפורטת, כך שבכל עדכון ישמר לך המידע - מה קנית ומה לא. באתר
+          מאגר ענק של חנויות בכל התחומים הנדרשים, על כל חנות תוכלי למצוא את כל הפרטים הרלוונטים: סניפים - וכתובות
+          מדויקות לכל סניף, רשימת מוצרים שנמכרים בחנות (בקטגוריות כלליות), טווח מחירים, המלצות ועוד. בלחיצה על כל פריט
+          ברשימה יעלו פרטי כל החנויות המוכרות פריט זה.תוכלי לחפש חנות שנמצאת בעיר מסוימת או בטווח מחירים מסוים. על כל
+          חנות תוכלי למצוא גם המלצות מכלות אחרות וכן קישור לאתר - למקרה שאת מעונינת לקנות און ליין. בכל כניסה לאתר תקבלי
+          עדכון כמה ימים נותרו עד החתונה שלך(!) וכמה פריטים עדין לא קנית.<br> לך נשאר כמעט רק לסמן וי במקום המתאים...
+          <br>שיהיה במזל טוב ובקלות!.
+        </p>
+      </div>
+    </div>
+    </div>
+    <div id="categories-imags">
+      <a href="../textil/textil.html" class="cat" id="tex">נדוניה<br><i class="fas fa-wallet"></i></a>
+      <a href="../clothing&shoes/clothing&shoes.html" class="cat" id="clot">הלבשה והנעלה<br><i class="fas fa-socks"></i></a>
+      <a href="../homeDishes/homeDishes.html" class="cat" id="homeDish">כלי בית<br><i class="fas fa-coffee"></i></a>
+      <a href="../makeUp/makeUp.html" class="cat" id="make">איפור<br><i class="fas fa-magic"></i></a>
+      <a href="../wigs/wigs.html" class="cat" id="wig">פיאות<br><i id="wig-icon"class="fas fa-fire"></i></a>
+    </div>
+   
+    <!-- <div id="store">
+      <div id="salesman" class="text">
+        <h1>בעל עסק?</h1>
+        <h2>מעונין להגדיל מכירות?</h2>
+        <p>בוא וגלה את הדרך להגדיל מכירות במינמום מאמץ ומינימום עלויות.<br>
+          תמורת אגרה נמוכה ביותר לחודש הפרסומת שלך תופיע באתר מעוצב וידידותי שכלות רבות משתמשות בו, באתר יופיעו כל פרטי
+          החנות שלך כולל קישור לאתר הבית,ובכך יוכפל וישולש היקף הלקוחות שיתוודעו לעסק שלך. <br>צור קשר עכשיו עם מרים
+          0504164572<br> או עם תרצה 0556736200<br> או במייל m0504164572@gmail.com <br>והתחל לתגבר עובדים בעסק שלך...
+        </p>
+      </div>
+      <img src="../../assets/backgrounds/מנורה.jpg" </div>
+    </div> -->
+
+    <div id = "mapa">
+      <!-- <h2>מפת אתר</h2> -->
+      <div id="categories">
+      <h3>קטגוריות</h3>
+      <ul>
+        <li><a class="bottom"  href="../textil/textil.html">נדוניה</a></li>
+        <li><a class="bottom" href="../homeDishes/homeDishes.html">כלי בית</a></li>
+        <li><a class="bottom" href="../clothing&shoes/clothing&shoes.html">הלבשה והנעלה</a></li>
+        <li><a class="bottom" href="../wigs/wigs.html">פיאות</a></li>
+        <li><a class="bottom" href="../makeUp/makeUp.html">איפור</a></li>
+      </ul>
+    </div>
+    <div id="links">
+  <h3>קישורים מומלצים</h3>
+      <ul>
+        <li><a class="bottom" href="../home/home.html">בית </a></li>
+        <li ><a  class="bottom" href="../myShoppingList/myShoppingList.html">רשימת הקניות האישית שלי</a></li>
+        <li><a id="cardLink" class="bottom" href="./home.html">לרכישת כרטיס הנחה</a></li>
+       </ul>
+    </div>
+    <div id="about">
+
+       <h3>אודותינו</h3>
+       <p>אנחנו כאן כדי לעזור לך להתכונן ליום הגדול שלך בקלות ובנוחות .<br>אצלנו תוכלי למצוא מידע על מאגר עצום של חנויות,<br> תוכלי לראות מה הקצב שלך ולראות בעינים את ההתקדמות שלך ליעד.<br> מוזמנת לגלות שאפשר גם אחרת!</p>
+    </div>
+    <div id="contact">
+
+       <h3>צרי קשר</h3>
+       <i class="fas fa-phone-alt"></i><span>  0504164572 / 0556736200</span><br><br>
+       <i class = "fas fa-envelope"></i><span>  m0504164572@gmail.com</span>
+    </div>
+         </div>
+
+</body>
+<script src="../../services/general.js"></script>
+<script src="./home.js"></script>
+
+</html>

@@ -1,0 +1,149 @@
+
+h1 {
+    margin-right: 30%;
+}
+#first {
+    margin-right: 4%;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+#first>#about {
+    background-color: #fae1eafd;
+    color: rgb(61, 60, 60);
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 5%;
+    font-size: 18px;
+}
+#store>img {
+   width: 50%;
+}
+#store {
+    margin-top: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    background-color: rgb(61, 60, 60);
+    color: #fae1eafd;
+}
+#store>#salesman {
+    padding: 8%;
+    font-size: 25px;
+}
+#image {
+    width: 800%;
+    height: 1000px;
+    background-image: url("../../assets/backgrounds/כלה.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: images infinite;
+    animation-duration: 50s;
+}
+.cat{
+    width: 17%;
+    filter: blur(2px);
+    opacity: 0.4;
+    background-size: cover;
+    border-style: solid;
+    border-color: darkgray;
+    border-width: 3px;
+    opacity:1;
+    color: #6b6b6b;
+    text-align: center;
+    font-size: 50px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    text-decoration: none;
+    padding-bottom: 10%;
+}
+
+.cat:hover{
+    opacity: 1;
+    filter: blur(0px);
+    color: rgb(255, 253, 253);
+    font-weight: 600;
+    text-shadow: 2px 2px  #000000;
+    text-decoration: none;
+}
+
+#wig-icon{
+    transform: rotate(210deg); 
+}
+#categories-imags{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#tex{
+    background-image: url("../../assets/backgrounds/beautiful-composition-spa-bath-concept.jpg"); 
+}
+#homeDish{
+    background-image: url("../../assets/backgrounds/1728.jpg");
+}
+#clot{
+    background-image: url("../../assets/backgrounds/female-pink-colorful-clothing-set-racks-shelves-clothing-store-brand-new-modern-boutique-spring-summer-dress-collections.jpg"); 
+}
+#wig{
+    background-image: url("../../assets/backgrounds/wig.jpg");
+  
+}
+#make{
+    background-image: url("../../assets/backgrounds/women-s-day-still-life-with-makeup-jewelry.jpg");
+}
+
+@keyframes images {
+    0% {
+        background-image: url("../../assets/backgrounds/כלה.jpg");
+    }
+    14% {
+        background-image: url("../../assets/backgrounds/female-pink-colorful-clothing-set-racks-shelves-clothing-store-brand-new-modern-boutique-spring-summer-dress-collections.jpg");
+    }
+    28% {
+        background-image: url("../../assets/backgrounds/women-s-day-still-life-with-makeup-jewelry.jpg");
+    }
+    42% {
+        background-image: url("../../assets/backgrounds/wig.jpg");
+    }
+    56% {
+        background-image: url("../../assets/backgrounds/bouquets-greenery-blue-hydrangeas-pinned-white-cha.jpg");
+    }
+    70% {
+        background-image: url("../../assets/backgrounds/1728.jpg");
+    }
+    84% {
+        background-image: url("../../assets/backgrounds/beautiful-composition-spa-bath-concept.jpg")
+    }
+    100% {
+        background-image: url("../../assets/backgrounds/כלה.jpg");
+    }
+}
+#alrt{
+    position: fixed;
+    z-index: 4;
+    background-color: #fae1eafd;
+    border: none;
+    margin-top: 5%;
+    margin-right: 10%;
+    text-align:center ;
+    width: 60%;
+}
+
+#order{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgba(96, 56, 69, 0.983); 
+    background-repeat: no-repeat;
+    direction: rtl;
+    text-align:center ;
+}
+#message{
+    color: white;
+    font-size: 100px;
+}
+#back{
+    font-size: 40px;
+}
